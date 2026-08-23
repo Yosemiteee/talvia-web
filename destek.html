@@ -1,0 +1,277 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Talvia — Destek</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { color-scheme: light dark; --kagit:#F7F4EC; --murekkep:#17140F;
+          --cizgi:#DED8CB; --altin:#B08D3F; --yesil:#2C7355; }
+  @media (prefers-color-scheme: dark) {
+    :root { --kagit:#171613; --murekkep:#E9E4D8; --cizgi:#33302A;
+            --altin:#C9A85C; --yesil:#4E9E7A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--kagit); color:var(--murekkep);
+         font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;
+         display:flex; justify-content:center; }
+  main { max-width:640px; padding:36px 22px 72px; width:100%; }
+  h1 { font-size:30px; margin:0 0 2px; letter-spacing:-.4px; }
+  .alt { opacity:.7; margin:0 0 22px; font-size:14.5px; }
+  h2 { font-size:17px; margin:30px 0 8px; }
+  p, li { margin:9px 0; }
+  ul { padding-inline-start:20px; }
+  .kutu { border:1px solid var(--cizgi); border-radius:12px;
+          padding:14px 18px; margin:20px 0; }
+  .vurgu { border-inline-start:3px solid var(--yesil); padding-inline-start:13px;
+           border-radius:0; border-top:0; border-bottom:0; border-inline-end:0; }
+  .kucuk { font-size:13.5px; opacity:.72; }
+  a { color:var(--yesil); }
+  nav { display:flex; gap:8px; margin:0 0 26px; flex-wrap:wrap; }
+  nav button { font:inherit; font-size:14px; padding:7px 15px; cursor:pointer;
+               background:transparent; color:inherit; border:1px solid var(--cizgi);
+               border-radius:999px; }
+  nav button[aria-current="true"] { background:var(--yesil); color:#fff;
+                                    border-color:var(--yesil); }
+  section { display:none; }
+  section[data-acik] { display:block; }
+  [dir="rtl"] { text-align:right; }
+  details { border-bottom:1px solid var(--cizgi); padding:2px 0; }
+  summary { cursor:pointer; padding:11px 0; font-weight:600; font-size:15.5px; }
+  details p:last-child { margin-bottom:14px; }
+</style>
+
+<main>
+  <h1>Talvia</h1>
+  <p class="alt" id="altbaslik">Destek</p>
+
+  <nav>
+    <button data-dil="tr" aria-current="true">Türkçe</button>
+    <button data-dil="en">English</button>
+    <button data-dil="ar">العربية</button>
+  </nav>
+
+  <!-- ================================ TÜRKÇE ================================ -->
+  <section data-dil="tr" data-acik lang="tr">
+    <div class="kutu vurgu">
+      <p style="margin:0"><b>İletişim.</b>
+      <a href="mailto:samiyusuf178@gmail.com">samiyusuf178@gmail.com</a><br>
+      <span class="kucuk">Genellikle birkaç gün içinde dönüş yapılıyor.
+      Talvia'yı tek kişi geliştiriyor.</span></p>
+    </div>
+
+    <h2>Bir ölçüm yanlış çıktıysa</h2>
+    <p>En çok işimize yarayan geri bildirim budur. Yazarken şunları
+    ekleyin, yeter:</p>
+    <ul>
+      <li><b>Sûre ve âyet numarası</b> — örneğin Fâtiha 4.</li>
+      <li>Ekranda ne yazdığı (“uzatma kısa kaldı” gibi).</li>
+      <li>Sizce doğrusunun ne olduğu.</li>
+    </ul>
+    <p class="kucuk">Ses kaydınıza ihtiyacımız yok; kayıtlar zaten
+    saklanmıyor.</p>
+
+    <h2>Sık sorulanlar</h2>
+
+    <details>
+      <summary>Ses kaydım saklanıyor mu?</summary>
+      <p>Hayır. Ses, okuyuşun ölçülebilmesi için sunucuya gönderilir,
+      orada çözümlenir ve saklanmadan atılır. Üçüncü bir tarafa
+      gönderilmez. Ayrıntı için
+      <a href="/gizlilik">gizlilik politikası</a>.</p>
+    </details>
+
+    <details>
+      <summary>Neden internet gerekiyor?</summary>
+      <p>Ölçüm, telefonun kaldıramayacağı bir yapay zekâ modeliyle
+      sunucuda yapılıyor. Mushafı okumak, meal ve kâri dinlemek için
+      bağlantı gerekmez; yalnız ölçüm ve sesli takip için gerekir.</p>
+    </details>
+
+    <details>
+      <summary>Hesap açmam gerekiyor mu?</summary>
+      <p>Hayır. Hesap, e-posta ve parola yok. Yalnız lige ve halkaya
+      katılmak isterseniz bir takma ad seçiyorsunuz; katılmazsanız
+      hiçbir veriniz sunucuya gitmez.</p>
+    </details>
+
+    <details>
+      <summary>Günlük sınır nedir?</summary>
+      <p>Mushaf, meal, kâri dinleme, tecvit, talim, hafızlık tekrar planı
+      ve müteşâbih uyarısı her zaman ücretsizdir. Sınırlı olan yalnız
+      yapay zekâ ölçümü: günde 5 dakika sesli takip ve 1 okuma karnesi.
+      Namaz sûrelerinde, cuma günleri ve Ramazan boyunca sınır yoktur.</p>
+    </details>
+
+    <details>
+      <summary>Mikrofon izni vermedim, nasıl açarım?</summary>
+      <p>Telefonun Ayarlar › Uygulamalar › Talvia › İzinler yolundan
+      mikrofonu açabilirsiniz. Uygulama içindeki uyarı kartında da
+      doğrudan ayarlara götüren bir düğme var.</p>
+    </details>
+
+    <details>
+      <summary>Verilerimi nasıl sildiririm?</summary>
+      <p>Uygulamayı silmek cihazdaki her şeyi siler. Lige katıldıysanız
+      takma adınızın ve puanınızın silinmesi için yukarıdaki adrese
+      yazmanız yeterli.</p>
+    </details>
+
+    <details>
+      <summary>Talvia hocanın yerini alır mı?</summary>
+      <p>Hayır, almaz ve bunu iddia etmiyoruz. Hocaya gitmeden önceki
+      tekrarınızı verimli kılmak için var. Tecvit kural metinleri henüz
+      bir heyet tarafından gözden geçirilmedi; uygulamada bu, ilgili
+      ekranlarda açıkça belirtiliyor.</p>
+    </details>
+  </section>
+
+  <!-- ================================ ENGLISH =============================== -->
+  <section data-dil="en" lang="en">
+    <div class="kutu vurgu">
+      <p style="margin:0"><b>Contact.</b>
+      <a href="mailto:samiyusuf178@gmail.com">samiyusuf178@gmail.com</a><br>
+      <span class="kucuk">Usually answered within a few days. Talvia is
+      built by one person.</span></p>
+    </div>
+
+    <h2>If a measurement looks wrong</h2>
+    <p>This is the most useful thing you can send us. Just include:</p>
+    <ul>
+      <li>The <b>surah and ayah number</b> — for example Al-Fatiha 4.</li>
+      <li>What the screen said (“elongation was short”, etc.).</li>
+      <li>What you believe the correct reading is.</li>
+    </ul>
+    <p class="kucuk">We do not need your recording — recordings are not
+    stored anyway.</p>
+
+    <h2>Frequently asked</h2>
+
+    <details>
+      <summary>Are my recordings stored?</summary>
+      <p>No. Audio is sent to the server so your recitation can be
+      measured, analysed there, and discarded without being stored. It is
+      never sent to a third party. See the
+      <a href="/gizlilik">privacy policy</a>.</p>
+    </details>
+
+    <details>
+      <summary>Why does it need the internet?</summary>
+      <p>The measurement runs on a server, using a model too large for a
+      phone. Reading the mushaf and listening to a reciter work without a
+      connection; only measurement and live following need one.</p>
+    </details>
+
+    <details>
+      <summary>Do I need an account?</summary>
+      <p>No. There is no account, no email and no password. Only if you
+      choose to join the weekly league or a circle do you pick a display
+      name; if you don’t join, none of your data leaves the app.</p>
+    </details>
+
+    <details>
+      <summary>What is the daily limit?</summary>
+      <p>The mushaf, translations, reciter audio, tajwid, articulation
+      lessons, the memorisation review plan and similar-verse warnings are
+      always free. Only the AI measurement is limited: 5 minutes of live
+      following and 1 report per day. There is no limit on the short
+      prayer surahs, on Fridays, or during Ramadan.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete my data?</summary>
+      <p>Deleting the app removes everything on the device. If you joined
+      the league, email the address above and your display name and score
+      will be removed.</p>
+    </details>
+
+    <details>
+      <summary>Does Talvia replace a teacher?</summary>
+      <p>No, and we don’t claim it does. It exists to make your practice
+      between lessons more productive. The tajwid rule texts have not yet
+      been reviewed by a scholarly board, and the app says so on the
+      relevant screens.</p>
+    </details>
+  </section>
+
+  <!-- ================================ العربية =============================== -->
+  <section data-dil="ar" lang="ar" dir="rtl">
+    <div class="kutu vurgu">
+      <p style="margin:0"><b>التواصل.</b>
+      <a href="mailto:samiyusuf178@gmail.com">samiyusuf178@gmail.com</a><br>
+      <span class="kucuk">يُردّ عادةً خلال أيام قليلة. يطوّر تلاڤيا شخص
+      واحد.</span></p>
+    </div>
+
+    <h2>إذا بدا القياس خاطئًا</h2>
+    <p>هذه أنفع رسالة يمكن أن ترسلها. يكفي أن تذكر:</p>
+    <ul>
+      <li><b>اسم السورة ورقم الآية</b> — مثلًا الفاتحة ٤.</li>
+      <li>ما ظهر على الشاشة (مثل «المدّ جاء قصيرًا»).</li>
+      <li>ما تراه أنت القراءة الصحيحة.</li>
+    </ul>
+    <p class="kucuk">لا نحتاج إلى تسجيلك؛ فالتسجيلات لا تُحفظ أصلًا.</p>
+
+    <h2>أسئلة متكررة</h2>
+
+    <details>
+      <summary>هل تُحفظ تسجيلاتي؟</summary>
+      <p>لا. يُرسل الصوت إلى الخادم لتقييم تلاوتك، ويُحلَّل هناك ثم
+      يُحذف دون حفظ، ولا يُرسل إلى أي طرف ثالث. انظر
+      <a href="/gizlilik">سياسة الخصوصية</a>.</p>
+    </details>
+
+    <details>
+      <summary>لماذا يحتاج إلى الإنترنت؟</summary>
+      <p>يجري القياس على الخادم بنموذج أكبر من أن يعمل على الهاتف. قراءة
+      المصحف والاستماع إلى القارئ لا تحتاج اتصالًا؛ القياس والمتابعة
+      الصوتية فقط هما اللذان يحتاجانه.</p>
+    </details>
+
+    <details>
+      <summary>هل أحتاج إلى حساب؟</summary>
+      <p>لا. لا حساب ولا بريد ولا كلمة مرور. تختار اسمًا ظاهرًا فقط إذا
+      أردت الانضمام إلى الدوري أو الحلقة؛ وإن لم تنضمّ فلا تخرج أي
+      بيانات منك.</p>
+    </details>
+
+    <details>
+      <summary>ما الحدّ اليومي؟</summary>
+      <p>المصحف والترجمة والاستماع إلى القارئ والتجويد والتلقين وخطة
+      مراجعة الحفظ وتنبيه المتشابهات مجانية دائمًا. المحدود هو القياس
+      بالذكاء الاصطناعي فقط: خمس دقائق متابعة صوتية وتقرير واحد يوميًا.
+      ولا حدّ في سور الصلاة القصيرة ولا يوم الجمعة ولا في رمضان.</p>
+    </details>
+
+    <details>
+      <summary>كيف أحذف بياناتي؟</summary>
+      <p>حذف التطبيق يمسح كل شيء على الجهاز. وإن كنت قد انضممت إلى
+      الدوري فراسل العنوان أعلاه ليُحذف اسمك الظاهر ونقاطك.</p>
+    </details>
+
+    <details>
+      <summary>هل يُغني تلاڤيا عن المعلّم؟</summary>
+      <p>لا، ولا ندّعي ذلك. وُجد ليجعل مراجعتك بين الدروس أنفع. ونصوص
+      قواعد التجويد لم تُراجَع بعد من هيئة علمية، والتطبيق يذكر ذلك
+      صراحةً في الشاشات المعنيّة.</p>
+    </details>
+  </section>
+</main>
+
+<script>
+  const bolumler = document.querySelectorAll('section[data-dil]');
+  const dugmeler = document.querySelectorAll('nav button');
+  const altbaslik = document.getElementById('altbaslik');
+  const basliklar = { tr: 'Destek', en: 'Support', ar: 'الدعم' };
+
+  function goster(dil) {
+    bolumler.forEach(b => b.toggleAttribute('data-acik', b.dataset.dil === dil));
+    dugmeler.forEach(d => d.setAttribute('aria-current', String(d.dataset.dil === dil)));
+    altbaslik.textContent = basliklar[dil] || basliklar.en;
+    document.documentElement.lang = dil;
+    document.documentElement.dir = dil === 'ar' ? 'rtl' : 'ltr';
+  }
+
+  dugmeler.forEach(d => d.addEventListener('click', () => goster(d.dataset.dil)));
+
+  const tarayici = (navigator.language || 'tr').slice(0, 2);
+  goster(['tr', 'en', 'ar'].includes(tarayici) ? tarayici : 'en');
+</script>

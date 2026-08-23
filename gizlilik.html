@@ -1,0 +1,357 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Talvia — Gizlilik Politikası</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { color-scheme: light dark; --kagit:#F7F4EC; --murekkep:#17140F;
+          --cizgi:#DED8CB; --altin:#B08D3F; --yesil:#2C7355; }
+  @media (prefers-color-scheme: dark) {
+    :root { --kagit:#171613; --murekkep:#E9E4D8; --cizgi:#33302A;
+            --altin:#C9A85C; --yesil:#4E9E7A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--kagit); color:var(--murekkep);
+         font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;
+         display:flex; justify-content:center; }
+  main { max-width:640px; padding:36px 22px 72px; width:100%; }
+  h1 { font-size:30px; margin:0 0 2px; letter-spacing:-.4px; }
+  .alt { opacity:.7; margin:0 0 22px; font-size:14.5px; }
+  h2 { font-size:17px; margin:30px 0 8px; }
+  h3 { font-size:14px; margin:20px 0 6px; letter-spacing:.3px;
+       text-transform:uppercase; opacity:.68; }
+  p, li { margin:9px 0; }
+  ul { padding-inline-start:20px; }
+  .kutu { border:1px solid var(--cizgi); border-radius:12px;
+          padding:14px 18px; margin:20px 0; }
+  .vurgu { border-inline-start:3px solid var(--yesil); padding-inline-start:13px;
+           border-radius:0; border-top:0; border-bottom:0; border-inline-end:0; }
+  .kucuk { font-size:13.5px; opacity:.72; }
+  code { font-size:12.5px; opacity:.85; word-break:break-all; }
+  table { border-collapse:collapse; width:100%; margin:12px 0; font-size:14.5px;
+          display:block; overflow-x:auto; }
+  th, td { text-align:start; padding:8px 10px; border-bottom:1px solid var(--cizgi);
+           vertical-align:top; }
+  th { font-weight:600; opacity:.75; font-size:13px; text-transform:uppercase;
+       letter-spacing:.3px; }
+  nav { display:flex; gap:8px; margin:0 0 26px; flex-wrap:wrap; }
+  nav button { font:inherit; font-size:14px; padding:7px 15px; cursor:pointer;
+               background:transparent; color:inherit; border:1px solid var(--cizgi);
+               border-radius:999px; }
+  nav button[aria-current="true"] { background:var(--yesil); color:#fff;
+                                    border-color:var(--yesil); }
+  section { display:none; }
+  section[data-acik] { display:block; }
+  [dir="rtl"] { text-align:right; }
+</style>
+
+<main>
+  <h1>Talvia</h1>
+  <p class="alt" id="altbaslik">Gizlilik Politikası · sürüm 1.1 · 23 Ağustos 2026</p>
+
+  <nav>
+    <button data-dil="tr" aria-current="true">Türkçe</button>
+    <button data-dil="en">English</button>
+    <button data-dil="ar">العربية</button>
+  </nav>
+
+  <!-- ================================ TÜRKÇE ================================ -->
+  <section data-dil="tr" data-acik lang="tr">
+    <div class="kutu vurgu">
+      <p style="margin:0"><b>Özet.</b> Okuduğunuz ses, ölçülmek üzere
+      telefonunuzdan <b>Talvia'nın kendi sunucusuna</b> gönderilir. O sunucu
+      geliştiricinin bilgisayarıdır; <b>üçüncü taraf bir yapay zekâ servisi
+      kullanılmaz</b>. Ses çözümlendikten sonra silinir, saklanmaz.
+      Göndermeden önce uygulama size sorar ve izninizi alır. Reklam yok,
+      izleme yok, veri satışı yok. E-posta, telefon, konum istenmiyor.</p>
+    </div>
+
+    <h2>1. Kim topluyor</h2>
+    <p>Talvia şu an bir <b>test sürümü</b>. Sunucusu geliştiricinin evindeki
+    kişisel bilgisayardır; bulut sağlayıcısı yoktur. Sorularınız için
+    uygulamadaki iletişim adresini kullanabilirsiniz.</p>
+
+    <h2>2. Ne toplanıyor</h2>
+    <table>
+      <tr><th>Veri</th><th>Neden</th><th>Ne kadar durur</th></tr>
+      <tr>
+        <td><b>Görünen ad</b> ve bir <b>oturum anahtarı</b></td>
+        <td>İlerlemenizi size bağlamak; halka ve lig sıralaması</td>
+        <td>Hesabı silene kadar</td>
+      </tr>
+      <tr>
+        <td><b>İlerleme</b>: okuma sayısı, gün serisi, ortalama puan, beceri
+        eksenleri, rozetler, lig puanı, halka üyeliği</td>
+        <td>Tekrar aralıklarını hesaplamak ve ilerlemeyi göstermek</td>
+        <td>Hesabı silene kadar</td>
+      </tr>
+      <tr>
+        <td><b>Ses kaydı</b> — okuduğunuz âyet, puanı, ekranda gösterilen
+        işaretler, sinyal/gürültü oranı, fonem karşılaştırması</td>
+        <td>Okuyuşunuzu ölçmek — mahreç, sıfat, medd ve tecvit</td>
+        <td><b>Saklanmıyor.</b> Ölçüm biter bitmez siliniyor</td>
+      </tr>
+      <tr>
+        <td><b>Cihaz ayarları</b>: hat, yazı boyutu, tema, dil</td>
+        <td>Uygulamayı açtığınızda aynı görünmesi</td>
+        <td>Yalnız telefonunuzda durur, sunucuya gitmez</td>
+      </tr>
+    </table>
+
+    <h3>Toplanmayanlar</h3>
+    <p>E-posta, telefon numarası, parola, konum, kişi listesi, reklam
+    kimliği, cihaz kimliği, tarama geçmişi. Uygulamada reklam ve üçüncü
+    taraf analiz aracı yoktur.</p>
+
+    <h2>3. Ses kaydı — açıkça</h2>
+    <p><b>Önce izin alınır.</b> Uygulama, ilk okumadan önce ne
+    gönderildiğini, kime gittiğini, niçin gerektiğini ve ne kadar
+    durduğunu ekranda yazar ve onayınızı ister. Onay vermezseniz ses
+    gönderilmez; mushaf, kari sesi ve tecvit içeriği yine çalışır. Onayı
+    <em>Profil &gt; Ses izni</em>nden istediğiniz an geri alabilirsiniz.</p>
+    <p><b>Çözümlenen ses saklanmaz.</b> Ölçüm biter bitmez silinir; diske
+    yazılmaz, yayımlanmaz, paylaşılmaz, model eğitiminde kullanılmaz,
+    satılmaz.</p>
+    <p>Geliştirmeye yönelik teşhis kaydı <b>kapalıdır</b> ve sunucu bunu
+    <code>/saglik</code> ucundaki <code>oturum_kaydi</code> alanından
+    herkese açık biçimde bildirir. Bir gün açılırsa uygulama ekranın
+    üstünde kalıcı bir uyarı gösterir ve izniniz yeniden istenir —
+    kaydedildiğini bilmediğiniz bir okuma saklanmaz.</p>
+
+    <h2>4. Nereye gidiyor</h2>
+    <p>Ses, telefonunuzdan <b>yalnızca Talvia'nın kendi sunucusuna</b>
+    gider; başka hiçbir yere gönderilmez. Bağlantı HTTPS ile şifrelenir.
+    Çözümleme o makinedeki ekran kartında, kendi donanımımızda çalışan
+    açık kaynaklı bir modelle (obadx/muaalem-model-v3_2, MIT lisansı)
+    yapılır. <b>Üçüncü taraf bir yapay zekâ servisi, bulut sağlayıcısı ya
+    da veri işleyici yoktur.</b> Ses, ölçüm bittiği anda silinir.</p>
+    <p class="kucuk">Uygulamada geri bildirim cümlesini akıcılaştıran
+    isteğe bağlı bir metin servisi vardır. <b>Şu an kapalıdır.</b> Açılırsa
+    dışarıya yalnızca hata türlerinin <em>sayısı</em> gider
+    (<code>{"medd": 1, "ikame": 3}</code> gibi) — ses, âyet ve kimlik
+    gitmez.</p>
+
+    <h2>5. Haklarınız</h2>
+    <ul>
+      <li><b>Silme.</b> Hesabınızın ve bütün kayıtlarınızın silinmesini
+      isteyebilirsiniz; istek üzerine silinir.</li>
+      <li><b>Erişim.</b> Sizinle ilgili saklanan her şeyin bir kopyasını
+      isteyebilirsiniz.</li>
+      <li><b>Vazgeçme.</b> Ses kaydının kapatılmasını isteyebilirsiniz;
+      uygulama kayıtsız da tam çalışır.</li>
+    </ul>
+
+    <h2>6. Çocuklar</h2>
+    <p>Uygulama her yaşa uygundur, ancak 13 yaşından küçük bir çocuğun
+    kaydının alınması için ebeveyn izni gerekir. Test sürümü kapalı bir
+    davetli çevresiyle sınırlıdır.</p>
+
+    <h2>7. Değişiklikler</h2>
+    <p>Bu metin değişirse sürüm numarası ve tarihi güncellenir. Toplanan
+    veri kapsamı genişlerse uygulama içinde ayrıca bildirilir.</p>
+  </section>
+
+  <!-- ================================ ENGLISH =============================== -->
+  <section data-dil="en" lang="en">
+    <div class="kutu vurgu">
+      <p style="margin:0"><b>In short.</b> The audio you recite is sent from your phone to
+      <b>Talvia's own server</b>. That server is the developer's computer;
+      <b>no third-party AI service is used</b>. The audio is deleted once it
+      has been analysed and is not stored. The app tells you this and asks
+      your permission before sending anything. No ads, no tracking, no data
+      selling. We do not ask for email, phone number, or location.</p>
+    </div>
+
+    <h2>1. Who collects it</h2>
+    <p>Talvia is currently a <b>test release</b>. The server is the
+    developer's personal computer at home; there is no cloud provider. Use
+    the contact address in the app for any question.</p>
+
+    <h2>2. What is collected</h2>
+    <table>
+      <tr><th>Data</th><th>Why</th><th>How long</th></tr>
+      <tr>
+        <td><b>Display name</b> and a <b>session key</b></td>
+        <td>To tie progress to you; circles and league standings</td>
+        <td>Until you delete the account</td>
+      </tr>
+      <tr>
+        <td><b>Progress</b>: reading count, day streak, average score, skill
+        axes, badges, league points, circle membership</td>
+        <td>To compute review intervals and show progress</td>
+        <td>Until you delete the account</td>
+      </tr>
+      <tr>
+        <td><b>Audio recording</b> — the verse you read, its score, the marks
+        shown on screen, signal-to-noise ratio, phoneme comparison</td>
+        <td>To measure your recitation — articulation, letter qualities,
+        madd and tajweed</td>
+        <td><b>Not stored.</b> Deleted as soon as the measurement finishes</td>
+      </tr>
+      <tr>
+        <td><b>Device settings</b>: script, text size, theme, language</td>
+        <td>So the app looks the same next time</td>
+        <td>Stays on your phone; never sent to the server</td>
+      </tr>
+    </table>
+
+    <h3>Not collected</h3>
+    <p>Email, phone number, password, location, contacts, advertising ID,
+    device ID, browsing history. The app contains no advertising and no
+    third-party analytics.</p>
+
+    <h2>3. Audio recording — plainly</h2>
+    <p><b>Permission comes first.</b> Before your first recitation the app
+    states on screen what is sent, who receives it, why it is needed and how
+    long it is kept, and asks you to agree. If you decline, no audio is
+    sent; the Mushaf, reciter audio and tajweed content still work. You can
+    withdraw at any time from <em>Profile &gt; Voice permission</em>.</p>
+    <p><b>Analysed audio is not stored.</b> It is deleted as soon as the
+    measurement finishes: not written to disk, not published, not shared,
+    not used for model training, not sold.</p>
+    <p>Diagnostic recording for development is <b>off</b>, and the server
+    declares this publicly in the <code>oturum_kaydi</code> field of its
+    <code>/saglik</code> endpoint. If it is ever switched on, the app shows a
+    persistent notice at the top of the screen and asks for your permission
+    again — a recitation you did not know was being recorded is not
+    stored.</p>
+
+    <h2>4. Where it goes</h2>
+    <p>The audio leaves your phone and goes to <b>Talvia's own server and
+    nowhere else</b>. The connection is encrypted with HTTPS. The analysis
+    runs on the graphics card in that machine, on our own hardware, using an
+    open-source model (obadx/muaalem-model-v3_2, MIT licence). <b>There is no
+    third-party AI service, cloud provider or data processor.</b> The audio is
+    deleted the moment the measurement is done.</p>
+    <p class="kucuk">The app has an optional text service that smooths the
+    feedback sentence. <b>It is currently disabled.</b> If enabled, only the
+    <em>counts</em> of error types leave the machine (such as
+    <code>{"medd": 1, "ikame": 3}</code>) — no audio, no verse, no identity.</p>
+
+    <h2>5. Your rights</h2>
+    <ul>
+      <li><b>Deletion.</b> You may ask for your account and all of your
+      recordings to be deleted; this is done on request.</li>
+      <li><b>Access.</b> You may ask for a copy of everything stored about
+      you.</li>
+      <li><b>Opt-out.</b> You may ask for recording to be turned off; the app
+      works fully without it.</li>
+    </ul>
+
+    <h2>6. Children</h2>
+    <p>The app is suitable for all ages, but recording a child under 13
+    requires parental consent. The test release is limited to a closed
+    circle of invitees.</p>
+
+    <h2>7. Changes</h2>
+    <p>If this text changes, the version number and date are updated. If the
+    scope of collected data widens, it is also announced inside the app.</p>
+  </section>
+
+  <!-- ================================ العربية =============================== -->
+  <section data-dil="ar" lang="ar" dir="rtl">
+    <div class="kutu vurgu">
+      <p style="margin:0"><b>باختصار.</b> يُرسَل الصوت الذي تتلوه من هاتفك إلى
+      <b>خادم تالفيا نفسه</b>، وهو حاسوب المطوّر؛ <b>ولا تُستخدَم أي خدمة
+      ذكاء اصطناعي من طرف ثالث</b>. ويُحذَف الصوت بعد تحليله ولا يُخزَّن.
+      ويخبرك التطبيق بذلك ويطلب إذنك قبل أن يرسل أي شيء. لا إعلانات ولا
+      تتبُّع ولا بيع للبيانات. لا نطلب بريدًا إلكترونيًا ولا رقم هاتف ولا
+      موقعًا.</p>
+    </div>
+
+    <h2>١. مَن يجمع البيانات</h2>
+    <p>تالفيا حاليًا <b>إصدار تجريبي</b>. الخادم هو حاسوب المطوّر الشخصي في
+    منزله، ولا يوجد مزوّد سحابي. استخدم عنوان التواصل داخل التطبيق لأي سؤال.</p>
+
+    <h2>٢. ما الذي يُجمَع</h2>
+    <table>
+      <tr><th>البيانات</th><th>السبب</th><th>مدة الحفظ</th></tr>
+      <tr>
+        <td><b>الاسم الظاهر</b> و<b>مفتاح جلسة</b></td>
+        <td>لربط تقدّمك بك، وللحلقات وترتيب الدوري</td>
+        <td>حتى تحذف الحساب</td>
+      </tr>
+      <tr>
+        <td><b>التقدّم</b>: عدد القراءات، تتابع الأيام، متوسط الدرجة، محاور
+        المهارة، الأوسمة، نقاط الدوري، عضوية الحلقة</td>
+        <td>لحساب فترات المراجعة وعرض التقدّم</td>
+        <td>حتى تحذف الحساب</td>
+      </tr>
+      <tr>
+        <td><b>التسجيل الصوتي</b> — الآية التي قرأتها ودرجتها والعلامات
+        المعروضة على الشاشة ونسبة الإشارة إلى الضوضاء ومقارنة الفونيمات</td>
+        <td>لقياس تلاوتك — المخارج والصفات والمدود والتجويد</td>
+        <td><b>لا يُخزَّن.</b> يُحذَف فور انتهاء القياس</td>
+      </tr>
+      <tr>
+        <td><b>إعدادات الجهاز</b>: الخط، حجم النص، السمة، اللغة</td>
+        <td>ليبدو التطبيق كما تركته</td>
+        <td>تبقى على هاتفك ولا تُرسَل إلى الخادم</td>
+      </tr>
+    </table>
+
+    <h3>ما لا يُجمَع</h3>
+    <p>البريد الإلكتروني ورقم الهاتف وكلمة المرور والموقع وجهات الاتصال
+    ومعرّف الإعلانات ومعرّف الجهاز وسجل التصفح. لا يحتوي التطبيق على إعلانات
+    ولا أدوات تحليل من طرف ثالث.</p>
+
+    <h2>٣. التسجيل الصوتي — بوضوح</h2>
+    <p><b>الإذن أولًا.</b> قبل تلاوتك الأولى يبيّن التطبيق على الشاشة ما
+    الذي يُرسَل، وإلى مَن يذهب، ولماذا يلزم، وكم يبقى، ثم يطلب موافقتك. وإن
+    لم توافق فلا يُرسَل أي صوت؛ ويظل المصحف وصوت القارئ ومحتوى التجويد
+    يعمل. ويمكنك سحب الإذن متى شئت من <em>الملف الشخصي &gt; إذن
+    الصوت</em>.</p>
+    <p><b>الصوت المُحلَّل لا يُخزَّن.</b> يُحذَف فور انتهاء القياس: لا يُكتَب
+    على القرص ولا يُنشَر ولا يُشارَك ولا يُستخدَم في تدريب النماذج ولا
+    يُباع.</p>
+    <p>تسجيل التشخيص الخاص بالتطوير <b>مغلق</b>، ويُصرّح الخادم بذلك علنًا في
+    الحقل <code>oturum_kaydi</code> من مسار <code>/saglik</code>. وإن فُتِح
+    يومًا فسيعرض التطبيق تنبيهًا ثابتًا أعلى الشاشة ويطلب إذنك من جديد — فلا
+    تُحفَظ تلاوة لم تكن تعلم أنها تُسجَّل.</p>
+
+    <h2>٤. إلى أين تذهب</h2>
+    <p>يغادر الصوتُ هاتفَك إلى <b>خادم تالفيا وحده لا غير</b>، والاتصال
+    مُعمّى بـ HTTPS. ويجري التحليل على بطاقة الرسوميات في ذلك الجهاز، على
+    عتادنا نحن، بنموذج مفتوح المصدر (obadx/muaalem-model-v3_2، رخصة MIT).
+    <b>لا توجد خدمة ذكاء اصطناعي من طرف ثالث ولا مزوّد سحابي ولا معالج
+    بيانات.</b> ويُحذَف الصوت فور انتهاء القياس.</p>
+    <p class="kucuk">في التطبيق خدمة نصية اختيارية تُحسّن صياغة جملة
+    الملاحظات. <b>وهي معطَّلة حاليًا.</b> وإن فُعِّلت فلا يغادر الجهاز سوى
+    <em>أعداد</em> أنواع الأخطاء (مثل <code>{"medd": 1, "ikame": 3}</code>)
+    دون صوت ولا آية ولا هوية.</p>
+
+    <h2>٥. حقوقك</h2>
+    <ul>
+      <li><b>الحذف.</b> يمكنك طلب حذف حسابك وجميع تسجيلاتك، ويُنفَّذ عند
+      الطلب.</li>
+      <li><b>الاطّلاع.</b> يمكنك طلب نسخة من كل ما هو محفوظ عنك.</li>
+      <li><b>الانسحاب.</b> يمكنك طلب إيقاف التسجيل، والتطبيق يعمل كاملًا
+      بدونه.</li>
+    </ul>
+
+    <h2>٦. الأطفال</h2>
+    <p>التطبيق مناسب لكل الأعمار، غير أن تسجيل طفل دون الثالثة عشرة يستلزم
+    إذن وليّه. والإصدار التجريبي مقصور على دائرة مدعوّين مغلقة.</p>
+
+    <h2>٧. التغييرات</h2>
+    <p>إذا تغيّر هذا النص يُحدَّث رقم الإصدار وتاريخه. وإذا اتسع نطاق
+    البيانات المجموعة أُعلِن ذلك داخل التطبيق أيضًا.</p>
+  </section>
+</main>
+
+<script>
+  // Dil seçimi: tarayıcı dilinden başlıyor, kullanıcı değiştirebiliyor.
+  const dugmeler = document.querySelectorAll('nav button');
+  const bolumler = document.querySelectorAll('section[data-dil]');
+
+  function goster(dil) {
+    bolumler.forEach(b => b.toggleAttribute('data-acik', b.dataset.dil === dil));
+    dugmeler.forEach(d => d.setAttribute('aria-current', String(d.dataset.dil === dil)));
+    document.documentElement.lang = dil;
+    document.documentElement.dir = dil === 'ar' ? 'rtl' : 'ltr';
+  }
+
+  dugmeler.forEach(d => d.addEventListener('click', () => goster(d.dataset.dil)));
+
+  const tarayici = (navigator.language || 'tr').slice(0, 2);
+  goster(['tr', 'en', 'ar'].includes(tarayici) ? tarayici : 'en');
+</script>
