@@ -46,7 +46,7 @@
 
 <main>
   <h1>Talvia</h1>
-  <p class="alt" id="altbaslik">Gizlilik Politikası · sürüm 1.2 · 17 Eylül 2026</p>
+  <p class="alt" id="altbaslik">Gizlilik Politikası · sürüm 1.3 · 26 Eylül 2026</p>
 
   <nav>
     <button data-dil="tr" aria-current="true">Türkçe</button>
@@ -60,9 +60,9 @@
       <p style="margin:0"><b>Özet.</b> Okuduğunuz ses, ölçülmek üzere
       telefonunuzdan <b>Talvia'nın kendi sunucusuna</b> gönderilir. O sunucu
       geliştiricinin bilgisayarıdır; <b>üçüncü taraf bir yapay zekâ servisi
-      kullanılmaz</b>. Ses çözümlendikten sonra silinir, saklanmaz.
+      kullanılmaz</b>. Ses varsayılan olarak analizden sonra silinir. Ayrı ve isteğe bağlı arşiv onayı verirseniz aşağıdaki koşullarla 30 gün saklanır.
       Göndermeden önce uygulama size sorar ve izninizi alır. Reklam yok,
-      izleme yok, veri satışı yok. E-posta, telefon ve cihazın kesin konum bilgisi istenmiyor.</p>
+      izleme yok, veri satışı yok. Telefon ve kesin konum istenmez. Hata incelemesi için e-postanızı isterseniz kendiniz paylaşabilirsiniz.</p>
     </div>
 
     <h2>1. Kim topluyor</h2>
@@ -88,7 +88,7 @@
         <td><b>Ses kaydı</b> — okuduğunuz âyet, puanı, ekranda gösterilen
         işaretler, sinyal/gürültü oranı, fonem karşılaştırması</td>
         <td>Okuyuşunuzu ölçmek — mahreç, sıfat, medd ve tecvit</td>
-        <td><b>Saklanmıyor.</b> Ölçüm biter bitmez siliniyor</td>
+        <td>Varsayılan: ölçüm sonunda silinir. Ayrı arşiv onayı: 30 gün veya daha erken silme isteğinize kadar</td>
       </tr>
       <tr>
         <td><b>Cihaz ayarları</b>: hat, yazı boyutu, tema, dil</td>
@@ -106,7 +106,7 @@
     Seçim ve hatırlatma tercihi telefonunuzda kalır. Vakit göstergesini kapatarak
     silebilirsiniz. Diyanet'te aç düğmesi tarayıcıda harici bir sayfa açar.</p>
     <h3>Toplanmayanlar</h3>
-    <p>E-posta, telefon numarası, parola, cihazın kesin konum bilgisi, kişi listesi, reklam
+    <p>Telefon numarası, parola, cihazın kesin konum bilgisi, kişi listesi, reklam
     kimliği, cihaz kimliği, tarama geçmişi. Uygulamada reklam ve üçüncü
     taraf analiz aracı yoktur.</p>
 
@@ -116,14 +116,8 @@
     durduğunu ekranda yazar ve onayınızı ister. Onay vermezseniz ses
     gönderilmez; mushaf, kari sesi ve tecvit içeriği yine çalışır. Onayı
     <em>Profil &gt; Ses izni</em>nden istediğiniz an geri alabilirsiniz.</p>
-    <p><b>Çözümlenen ses saklanmaz.</b> Ölçüm biter bitmez silinir; diske
-    yazılmaz, yayımlanmaz, paylaşılmaz, model eğitiminde kullanılmaz,
-    satılmaz.</p>
-    <p>Geliştirmeye yönelik teşhis kaydı <b>kapalıdır</b> ve sunucu bunu
-    <code>/saglik</code> ucundaki <code>oturum_kaydi</code> alanından
-    herkese açık biçimde bildirir. Bir gün açılırsa uygulama ekranın
-    üstünde kalıcı bir uyarı gösterir ve izniniz yeniden istenir —
-    kaydedildiğini bilmediğiniz bir okuma saklanmaz.</p>
+    <p><b>Ses arşivi ayrı ve isteğe bağlıdır.</b> Varsayılan olarak kapalıdır. Ayarlar &gt; Ses arşivi bölümünde ayrıca onay verirseniz, tamamladığınız okuyuşun sesi, okunan bölüm, analiz sonucu, kayıt zamanı, uygulama sürümü ve rastgele kayıt kodu Talvia'nın kendi sunucusunda en fazla 30 gün tutulur. İsterseniz kendiniz e-posta ekleyebilirsiniz; hesabınızdan veya cihazınızdan e-posta bulunmaz ve girilen adres doğrulanmış kimlik sayılmaz. Talvia geliştiricileri bildirilen hatayı incelemek ve aynı kayıtla düzeltmeleri sınamak için erişebilir. Kayıtlar yayımlanmaz, satılmaz, üçüncü taraflara aktarılmaz ve model eğitiminde kullanılmaz.</p>
+    <p>Arşivi kapatmak yeni saklamaları durdurur; okuma ve analiz çalışmaya devam eder. Aynı ekrandan geçmiş kayıtları ve bunlara bağlı sonuç/e-postayı silebilirsiniz. Süresi dolan kayıtlar erişime kapanır ve en geç altı saat içinde otomatik temizlenir. Cihazınızda oluşturulan rastgele erişim anahtarı sadece kendi kayıtlarınıza erişim sağlar. Uygulamayı kaldırmadan önce arşivi silin; anahtar kaybolursa kayıt kodunuzla uygulamadaki iletişim adresinden silme veya kopya isteyebilirsiniz. Arşiv sesleri yedeklere dahil edilmez.</p>
 
     <h2>4. Nereye gidiyor</h2>
     <p>Ses, telefonunuzdan <b>yalnızca Talvia'nın kendi sunucusuna</b>
@@ -131,7 +125,7 @@
     Çözümleme o makinedeki ekran kartında, kendi donanımımızda çalışan
     açık kaynaklı bir modelle (obadx/muaalem-model-v3_2, MIT lisansı)
     yapılır. <b>Üçüncü taraf bir yapay zekâ servisi, bulut sağlayıcısı ya
-    da veri işleyici yoktur.</b> Ses, ölçüm bittiği anda silinir.</p>
+    da veri işleyici yoktur.</b> Arşiv onayı yoksa ses ölçüm sonunda silinir.</p>
     <p class="kucuk">Uygulamada geri bildirim cümlesini akıcılaştıran
     isteğe bağlı bir metin servisi vardır. <b>Şu an kapalıdır.</b> Açılırsa
     dışarıya yalnızca hata türlerinin <em>sayısı</em> gider
@@ -163,10 +157,9 @@
     <div class="kutu vurgu">
       <p style="margin:0"><b>In short.</b> The audio you recite is sent from your phone to
       <b>Talvia's own server</b>. That server is the developer's computer;
-      <b>no third-party AI service is used</b>. The audio is deleted once it
-      has been analysed and is not stored. The app tells you this and asks
+      <b>no third-party AI service is used</b>. By default audio is deleted after analysis. With separate optional archive consent, it is retained for 30 days as described below. The app tells you this and asks
       your permission before sending anything. No ads, no tracking, no data
-      selling. We do not ask for email, phone number, or precise device location.</p>
+      selling. We do not request phone numbers or precise location. You may optionally enter your email for error investigation.</p>
     </div>
 
     <h2>1. Who collects it</h2>
@@ -193,7 +186,7 @@
         shown on screen, signal-to-noise ratio, phoneme comparison</td>
         <td>To measure your recitation — articulation, letter qualities,
         madd and tajweed</td>
-        <td><b>Not stored.</b> Deleted as soon as the measurement finishes</td>
+        <td>Default: deleted after analysis. With separate archive consent: 30 days or until you delete it earlier</td>
       </tr>
       <tr>
         <td><b>Device settings</b>: script, text size, theme, language</td>
@@ -212,7 +205,7 @@
     be removed by disabling the indicator. “Open on Diyanet” opens an external
     page in your browser.</p>
     <h3>Not collected</h3>
-    <p>Email, phone number, password, precise device location, contacts, advertising ID,
+    <p>Phone number, password, precise device location, contacts, advertising ID,
     device ID, browsing history. The app contains no advertising and no
     third-party analytics.</p>
 
@@ -222,23 +215,15 @@
     long it is kept, and asks you to agree. If you decline, no audio is
     sent; the Mushaf, reciter audio and tajweed content still work. You can
     withdraw at any time from <em>Profile &gt; Voice permission</em>.</p>
-    <p><b>Analysed audio is not stored.</b> It is deleted as soon as the
-    measurement finishes: not written to disk, not published, not shared,
-    not used for model training, not sold.</p>
-    <p>Diagnostic recording for development is <b>off</b>, and the server
-    declares this publicly in the <code>oturum_kaydi</code> field of its
-    <code>/saglik</code> endpoint. If it is ever switched on, the app shows a
-    persistent notice at the top of the screen and asks for your permission
-    again — a recitation you did not know was being recorded is not
-    stored.</p>
+    <p><b>The audio archive is separate and optional.</b> It is off by default. If you separately consent in Settings &gt; Audio archive, your completed recording, reading target, analysis result, time, app version and random recording ID are retained on Talvia's own server for up to 30 days. You may enter an optional email yourself; we do not discover it from your account or device, and an entered address is not treated as verified identity. Talvia developers can access these records to investigate reported errors and replay corrections. They are not published, sold, shared with third parties or used for model training.</p>
+    <p>Turning the archive off stops new retention without disabling reading or analysis. The same screen lets you delete previous recordings and their associated results/email. Expired records become inaccessible and are automatically removed within six hours. A random access key on your device grants access only to your own recordings. Delete the archive before uninstalling; if the key is lost, use the in-app contact address with your recording ID to request deletion or a copy. Archived audio is excluded from backups.</p>
 
     <h2>4. Where it goes</h2>
     <p>The audio leaves your phone and goes to <b>Talvia's own server and
     nowhere else</b>. The connection is encrypted with HTTPS. The analysis
     runs on the graphics card in that machine, on our own hardware, using an
     open-source model (obadx/muaalem-model-v3_2, MIT licence). <b>There is no
-    third-party AI service, cloud provider or data processor.</b> The audio is
-    deleted the moment the measurement is done.</p>
+    third-party AI service, cloud provider or data processor.</b> Without archive consent, audio is deleted after analysis.</p>
     <p class="kucuk">The app has an optional text service that smooths the
     feedback sentence. <b>It is currently disabled.</b> If enabled, only the
     <em>counts</em> of error types leave the machine (such as
@@ -269,10 +254,9 @@
     <div class="kutu vurgu">
       <p style="margin:0"><b>باختصار.</b> يُرسَل الصوت الذي تتلوه من هاتفك إلى
       <b>خادم تالفيا نفسه</b>، وهو حاسوب المطوّر؛ <b>ولا تُستخدَم أي خدمة
-      ذكاء اصطناعي من طرف ثالث</b>. ويُحذَف الصوت بعد تحليله ولا يُخزَّن.
+      ذكاء اصطناعي من طرف ثالث</b>. ويُحذف الصوت بعد التحليل افتراضيًا. إذا وافقت بشكل منفصل على الأرشفة الاختيارية، يُحفظ لمدة 30 يومًا وفق الشروط أدناه.
       ويخبرك التطبيق بذلك ويطلب إذنك قبل أن يرسل أي شيء. لا إعلانات ولا
-      تتبُّع ولا بيع للبيانات. لا نطلب بريدًا إلكترونيًا ولا رقم هاتف ولا
-      الموقع الدقيق للجهاز.</p>
+      تتبُّع ولا بيع للبيانات. لا نطلب رقم الهاتف أو الموقع الدقيق. يمكنك إدخال بريدك الإلكتروني اختياريًا لفحص الأخطاء.</p>
     </div>
 
     <h2>١. مَن يجمع البيانات</h2>
@@ -297,7 +281,7 @@
         <td><b>التسجيل الصوتي</b> — الآية التي قرأتها ودرجتها والعلامات
         المعروضة على الشاشة ونسبة الإشارة إلى الضوضاء ومقارنة الفونيمات</td>
         <td>لقياس تلاوتك — المخارج والصفات والمدود والتجويد</td>
-        <td><b>لا يُخزَّن.</b> يُحذَف فور انتهاء القياس</td>
+        <td>افتراضيًا: يُحذف بعد التحليل. بموافقة منفصلة على الأرشفة: 30 يومًا أو حتى تحذفه قبل ذلك</td>
       </tr>
       <tr>
         <td><b>إعدادات الجهاز</b>: الخط، حجم النص، السمة، اللغة</td>
@@ -314,7 +298,7 @@
     عنوان IP لهاتفك إلى المصدر. يبقى اختيار المنطقة وإعداد التذكير على هاتفك،
     ويمكن حذفه بإيقاف المؤشر. زر فتح المصدر يفتح صفحة خارجية في المتصفح.</p>
     <h3>ما لا يُجمَع</h3>
-    <p>البريد الإلكتروني ورقم الهاتف وكلمة المرور والموقع الدقيق للجهاز وجهات الاتصال
+    <p>رقم الهاتف وكلمة المرور والموقع الدقيق للجهاز وجهات الاتصال
     ومعرّف الإعلانات ومعرّف الجهاز وسجل التصفح. لا يحتوي التطبيق على إعلانات
     ولا أدوات تحليل من طرف ثالث.</p>
 
@@ -324,20 +308,15 @@
     لم توافق فلا يُرسَل أي صوت؛ ويظل المصحف وصوت القارئ ومحتوى التجويد
     يعمل. ويمكنك سحب الإذن متى شئت من <em>الملف الشخصي &gt; إذن
     الصوت</em>.</p>
-    <p><b>الصوت المُحلَّل لا يُخزَّن.</b> يُحذَف فور انتهاء القياس: لا يُكتَب
-    على القرص ولا يُنشَر ولا يُشارَك ولا يُستخدَم في تدريب النماذج ولا
-    يُباع.</p>
-    <p>تسجيل التشخيص الخاص بالتطوير <b>مغلق</b>، ويُصرّح الخادم بذلك علنًا في
-    الحقل <code>oturum_kaydi</code> من مسار <code>/saglik</code>. وإن فُتِح
-    يومًا فسيعرض التطبيق تنبيهًا ثابتًا أعلى الشاشة ويطلب إذنك من جديد — فلا
-    تُحفَظ تلاوة لم تكن تعلم أنها تُسجَّل.</p>
+    <p><b>أرشيف الصوت منفصل واختياري.</b> يكون مغلقًا افتراضيًا. إذا وافقت بشكل منفصل في الإعدادات &gt; أرشيف الصوت، يُحفظ تسجيلك المكتمل والنص المقروء ونتيجة التحليل والوقت وإصدار التطبيق ورمز تسجيل عشوائي على خادم تالفيا لمدة تصل إلى 30 يومًا. يمكنك إدخال بريد إلكتروني اختياريًا؛ لا نستخرجه من الحساب أو الجهاز ولا نعتبره هوية موثقة. يستطيع مطوّرو تالفيا الوصول إلى التسجيل لفحص الخطأ الذي أبلغت عنه وإعادة اختباره بعد الإصلاح. لا يُنشر ولا يُباع ولا يُشارك مع أطراف ثالثة ولا يُستخدم لتدريب النماذج.</p>
+    <p>إيقاف الأرشيف يمنع الحفظ الجديد ولا يعطّل القراءة والتحليل. ويمكنك من الشاشة نفسها حذف التسجيلات السابقة ونتائجها والبريد المرتبط بها. تنتهي إمكانية الوصول بعد انتهاء المدة وتُحذف الملفات آليًا خلال ست ساعات. يمنحك مفتاح عشوائي على جهازك الوصول إلى تسجيلاتك وحدها. احذف الأرشيف قبل إزالة التطبيق؛ وإذا فقدت المفتاح، تواصل عبر عنوان الاتصال في التطبيق مع رمز التسجيل لطلب الحذف أو نسخة. لا تدخل الأصوات المؤرشفة في النسخ الاحتياطية.</p>
 
     <h2>٤. إلى أين تذهب</h2>
     <p>يغادر الصوتُ هاتفَك إلى <b>خادم تالفيا وحده لا غير</b>، والاتصال
     مُعمّى بـ HTTPS. ويجري التحليل على بطاقة الرسوميات في ذلك الجهاز، على
     عتادنا نحن، بنموذج مفتوح المصدر (obadx/muaalem-model-v3_2، رخصة MIT).
     <b>لا توجد خدمة ذكاء اصطناعي من طرف ثالث ولا مزوّد سحابي ولا معالج
-    بيانات.</b> ويُحذَف الصوت فور انتهاء القياس.</p>
+    بيانات.</b> ومن دون موافقة على الأرشفة، يُحذف الصوت بعد التحليل.</p>
     <p class="kucuk">في التطبيق خدمة نصية اختيارية تُحسّن صياغة جملة
     الملاحظات. <b>وهي معطَّلة حاليًا.</b> وإن فُعِّلت فلا يغادر الجهاز سوى
     <em>أعداد</em> أنواع الأخطاء (مثل <code>{"medd": 1, "ikame": 3}</code>)
